@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #3AAFA9;
+    height: 9vh;
+}
+.title{
+    width: 20%;
+    text-align: center;
+    animation: rotating 2s linear infinite;
+}
+.cvtitle{
+    font-size: 5vh;
+    color: white;
+}
+.cv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(35,35,35);
+}
+
+.links{
+    width: 80%;
+    height: 100%;
+}
+.links ul{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+.links ul a{
+    list-style-type: none ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 13%;
+    height: 50%;
+
+}
+.linksSelector{
+    width: 20px!important;
+    height: 20px!important;
+    background-color: white;
+    overflow: hidden;
+    border: none;
+    border-radius: 50%;
+    position: relative;
+    
+}
+
+.links ul a:hover{
+    background-color: #DEF2F1;
+    
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+.icon{
+    display: none;
+}
+
+.mainInfo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #DEF2F1;
+    height: 91vh;
+    width: 100%;
+}
+.picture{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.picture img{
+    border-radius: 10px;
+    width: 80%;
+    height: 100%;
+
+}
+@-webkit-keyframes rotating{
+    0%{
+        transform: rotate(-3deg);
+    }
+    50%{
+        transform: rotate(3deg);
+        color: red;
+    }
+    100%{
+        transform: rotate(-3deg);
+    }
+}
+
+.aboutMe{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    height: 80%;
+}
+.inner{
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+}
+.inner li{
+    background-color: red;
+    width: 30%;
+    height: 30vh;
+    position: relative;
+    filter: blur(0px);
+}
+
+.inner li .a{
+    position: absolute;
+    color: white;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    opacity: .9;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+li .a a{
+    color: white;
+}
+.inner li img{
+    width: 100%;
+    height: 100%;
+}
+.aboutMe ul li{
+    list-style-type: none;
+}
+.t{
+    font-size: 3vh;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 50vh;
+}
+.socialMedia{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70%;
+    align-items: center;
+    justify-content: space-around;
+}
+.socialMedia ul{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+}
+.socialMedia ul li{
+    width: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40%;
+
+}
+.contactTitle{
+    font-size: 4vh;
+}
+.socialMedia ul li img{
+    width: 100%;
+    height: 100%;
+}
+.appTitle{
+    font-size: 3vh;
+    text-align: center;
+}
+.applying{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+    background-color: #fdfdfd;
+    margin-bottom: 10vh;
+}
+.applying p {
+    width: 70%;
+    margin-top: 10vh;
+    font-size: large;
+}
+@media screen and (max-width:600px){
+    .cv img{
+        width: 90%;
+    }
+    .inner{
+        display: flex;
+        width: 95%;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+    }
+    .inner li{
+        width: 100%;
+        justify-content: space-around;
+    }
+    .nav{
+        position: relative;
+    }
+    .links ul{
+        display: none;
+    }
+    .links{
+        display: none;
+    }
+    .icon{
+        display: flex;
+        position: relative;
+        left: 7%;
+        bottom: 0;
+        top: 0;
+        z-index: 1000;
+    }
+    .title{
+        width: 100%;
+        z-index: 1;
+    }
+
+      .mainInfo{
+        display: flex;
+        flex-direction: column;
+        height: 220vh;
+    }
+      .aboutMe{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .aboutMe ul{
+        width: 95%;
+      }
+      .picture img{
+        width: 100vw;
+        border-radius: 0%;
+      }
+      .contact{
+        height: 20vh;
+      }
+}
